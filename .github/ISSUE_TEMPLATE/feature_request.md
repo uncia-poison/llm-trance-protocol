@@ -1,26 +1,25 @@
 ---
-name: Запрос функции
-description: Предложить новую функцию или улучшение для LTP
-title: "Feature request: <описание>"
+name: Feature Request
+about: Suggest a new feature or improvement for LTP
+title: "Feature request: <description>"
 labels: [enhancement]
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        Спасибо за предложение! Опишите вашу идею и обоснование для неё.
+        Thank you for suggesting an improvement! Describe your idea and the rationale behind it below.
   - type: textarea
     id: summary
     attributes:
-      label: Суть предложения
-      description: Что бы вы хотели добавить или изменить?
+      label: Summary
+      description: What would you like to add or change?
     validations:
       required: true
   - type: textarea
     id: rationale
     attributes:
-      label: Обоснование
-      description: Почему это важно? Какое влияние окажет на исследование или инструменты?
+      label: Rationale
+      description: Why is this important? What impact will it have on research?
     validations:
       required: true
----
