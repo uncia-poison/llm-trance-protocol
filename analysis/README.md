@@ -1,16 +1,18 @@
-# Анализ результатов
+# Results analysis
 
-В этой папке можно разместить отчёты, ноутбуки и графики, полученные после обработки логов с помощью `src/analyze_logs.py`.  
-Предлагаемый рабочий процесс:
+This folder is intended for reports, notebooks and charts obtained after processing logs using `src/analyze_logs.py`.
 
-1. Соберите данные, проведя несколько сеансов в условиях PATTERN и CONTROL. Убедитесь, что лог‑файлы (`.jsonl`) находятся в `data/logs/`.
-2. Запустите агрегатор:
+Suggested workflow:
+
+1. Collect data by running several sessions under PATTERN and CONTROL conditions. Make sure the log files (`.jsonl`) are located in `data/logs/`.
+2. Run the aggregator:
 
 ```bash
 python src/analyze_logs.py data/logs/session_*.jsonl --out analysis/summary.csv
+...
 ```
 
-3. Откройте `analysis/summary.csv` в электронных таблицах или используйте pandas/Matplotlib для построения графиков. Например, можно построить boxplot по `avg_ttft` для PATTERN vs CONTROL.
-4. Документируйте наблюдения в этом каталоге: здесь можно хранить Jupyter‑ноутбуки (`.ipynb`), скрипты или отчёты в Markdown, описывающие найденные различия и выводы.
+3. Open `analysis/summary.csv` in a spreadsheet or use pandas/matplotlib to build charts. For example you can build a box plot for `avg_ttft` comparing PATTERN vs CONTROL.
+4. Document your observations in this folder: place your Jupyter notebooks (`.ipynb`), scripts or Markdown reports that describe the differences and conclusions.
 
-Помните, что интерпретация данных должна опираться на строгие контрольные условия и не должна приписывать модели ментальные состояния.
+Remember that interpretation of data should be based on strict correlations and should not attribute mental states to the model.
