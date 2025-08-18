@@ -1,27 +1,27 @@
-# Кодекс поведения
+# Code of Conduct
 
-В этом проекте используется версия 2.1 [Contributor Covenant](https://www.contributor-covenant.org/).
+This project uses version 2.1 of the [Contributor Covenant](https://www.contributor-covenant.org/).
 
-## Наши обязательства
+## Our Pledge
 
-Мы стремимся к тому, чтобы участие в сообществе было открытым, дружелюбным и свободным от преследования для всех, независимо от уровня опыта, расы, пола, возраста, национальности, религии или иной идентичности.
+We pledge to make participation in our community safe, friendly and harassment-free for everyone, regardless of experience level, age, nationality, religion or identity.
 
-## Требуемое поведение
+## Required Behavior
 
-* Проявляйте уважение и вежливость к другим участникам.
-* Предоставляйте конструктивную обратную связь.
-* Принимайте ответственность за свои слова и действия.
+* Show respect and courtesy to other participants.
+* Provide constructive feedback.
+* Take responsibility for your words and actions.
 
-## Недопустимое поведение
+## Unacceptable Behavior
 
-* Оскорбительные высказывания или личные нападки.
-* Дискриминационные замечания по любым признакам.
-* Публикация частной информации без разрешения.
+* Offensive or personal attacks.
+* Discriminatory remarks against any group.
+* Publishing private information without permission.
 
-## Последствия
+## Consequences
 
-Нарушение этого Кодекса может привести к предупреждению, временной или постоянной блокировке в репозитории.
+Violations of this Code may result in the rejection of contributions or temporary or permanent banning from the repository.
 
-## Контакты
+## Contacts
 
-Если у вас возникла проблема или вы стали свидетелем неподобающего поведения, откройте issue с пометкой `code-of-conduct` или свяжитесь с maintainer'ом приватно.
+If you encounter a problem or witness unacceptable behavior, open an issue tagged `code-of-conduct` or contact the maintainer privately.
