@@ -1,9 +1,11 @@
-# Политика безопасности
+# Security Policy
 
-Мы благодарим исследователей безопасти, которые находят и сообщают уязвимости. Пожалуйста, следуйте этим правилам:
+We thank security researchers who find and report vulnerabilities. Please follow these rules:
 
-1. **Ответственное раскрытие.** Не публикуйте сведения о потенциальных уязвимостях публично, пока мы не успеем их исправить.
-2. **Контакт.** Сообщайте о найденных проблемах через электронную почту или в приватных сообщениях мейнтейнерам. Опишите шаги для воспроизведения.
-3. **Сроки.** Мы постараемся ответить в течение 7 дней и выпустить исправление в разумные сроки.
+1. **Responsible Disclosure.** Do not publicly disclose potential vulnerabilities until we have had a chance to fix them.
 
-Этот проект не содержит сервера или исполняемого кода, доступного публично, однако мы всё равно приветствуем сообщения о потенциальных проблемах в скриптах и документации.
+2. **Contact.** Report any discovered issues via email or private message to the maintainers. Describe the steps to reproduce.
+
+3. **Timelines.** We will aim to respond within 7 days and release a fix within a reasonable timeframe.
+
+This project contains no server or executable code available to the public, but we still welcome reports of potential issues in scripts and documentation.
