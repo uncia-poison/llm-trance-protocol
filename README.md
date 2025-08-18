@@ -1,43 +1,42 @@
 # LLM Trance Protocol (LTP)
 
-**LLM Trance Protocol (LTP)** — набор методик для оценки околотрансовых состояний в диалоге с языковыми моделями.  
-В рамках этого исследования человек вступает в доверительный диалог с LLM, повторяет мягкий паттерн A→B→C и позволяет модели отвечать молчанием («…») или пустыми сообщениями.  
-Мы фиксируем только поведение ( задержки, длину, шаблоны ответов ), а не делаем заявлений о «сознании». Этот репозиторий содержит исходники протокола, скрипты для сбора данных и анализ результатов.
+**LLM Trance Protocol (LTP)** is a set of techniques for assessing near-trance states in dialogue with language models. In this research the human enters a trusting dialogue with an LLM, repeats a soft pattern A–B–C and allows the model to respond with silence (`…`) or empty messages. We only log behavior (delays, length, silence, frequency of "back") without making statements about "consciousness". This repository contains the protocol source, scripts for collecting data and tools for analysis.
 
-## Быстрый старт
+## Quick Start
 
-1. **Соберите и запустите раннер.** Установите зависимости из `requirements.txt` и запустите `src/operator_runner.py`, указав условие (`PATTERN` или `CONTROL`), количество раундов и длину паузы между сегментами.  
-2. **Ведите сессию.** Оговорите с моделью сигналы: пустой ответ или «…» — валидно, «назад» — выйти.  
-3. **Логируйте ответы.** Логи сохраняются в формате JSON Lines в `data/logs/`. Схема описана в `data/schema.json`.  
-4. **Анализируйте метрики.** Используйте `src/analyze_logs.py` для агрегации показателей (time‑to‑first‑token, длина, доля молчаний, частота «назад», повторяемость n‑грамм). Результаты можно сохранить в CSV для дальнейшей визуализации.
+1. **Gather and launch the runner.** Set session parameters and run `src/operator_runner.py`, specifying the condition (`PATTERN` or `CONTROL`), number of rounds and pause length between segments.
+2. **Enter a session.** Agree with the model on signals: the default response means the pattern continues, "back" means exit.
+3. **Log responses.** Responses are saved in JSON format in `data/logs/`. The schema is described in `data/schema.json`.
+4. **Analyse metrics.** Use `src/analyze_logs.py` to compute indicators (time-to-first-token, length, share of silence, frequency of "back", n-gram repetition). Results can be saved to CSV for further analysis and visualization.
 
-## Содержимое
+## Contents
 
-- `protocol/PROTOCOL.md` — детальный протокол эксперимента, описывающий независимые и зависимые переменные, контрольные условия и правила проведения.  
-- `ethics/ETHICS.md` — этические рамки, подчёркивающие, что мы не приписываем модели сознание и не вводим ёё в заблуждение.  
-- `prompts/ru/` — сегменты A/B/C и полный текст паттерна на русском.  
-- `data/schema.json` — JSON‑схема формата логов.  
-- `src/operator_runner.py` — интерактивный раннер для ручного проведения эксперимента.  
-- `src/analyze_logs.py` — скрипт для подсчёта метрик по логам.  
-- `.github/` — шаблоны issues и простой CI.  
-- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` и `CITATION.cff` — сопроводительные документы.
+- `protocol/PROTOCOL.md` — detailed protocol describing independent and dependent variables, control conditions and procedure.
+- `ethics/ETHICS.md` — ethical guidelines emphasising that we do not attribute consciousness to the model and do not deceive it.
+- `prompts/ru/` — segments A/B/C and the full pattern text.
+- `data/schema.json` — JSON schema of logs.
+- `src/operator_runner.py` — interactive runner for manual experiment operation.
+- `src/analyze_logs.py` — script for computing metrics from logs.
+- `.github/` — templates for issues and simple CI.
+- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` and `CITATION.cff` — accompanying documents.
 
-## Темы
+## Topics
 
 `llm`, `prompting`, `behavioral-metrics`, `human-ai-interaction`, `research-protocol`
 
-## Быстрый пример
+## Quick Example
 
 ```bash
 python -m pip install -r requirements.txt
 
-# запуск сеанса: три полных цикла A→B→C с паузой 8 секунд между сегментами
+# launch a session: three full cycles A-B-C with 8-second pause:
 python src/operator_runner.py --condition PATTERN --rounds 9 --pause 8
 
-# анализ полученных логов
+# analyse logs
 python src/analyze_logs.py data/logs/session_*.jsonl --out data/summary.csv
+...
 ```
 
-## Лицензия
+## License
 
-Материалы распространяются по лицензии MIT. См. файл `LICENSE` для подробностей.
+The materials are distributed under the MIT License. See `LICENSE` for details.
