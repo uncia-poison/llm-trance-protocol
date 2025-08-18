@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "Если вы используете этот протокол, пожалуйста, цитируйте следующим образом."
+message: "If you use this protocol, please cite it as follows."
 title: "LLM Trance Protocol"
 version: "0.1.0"
 authors:
-  - family-names: "Сообщество"
-    given-names: "Участники"
+  - family-names: "Community"
+    given-names: "Participants"
     affiliation: "Open research"
 date-released: "2025-08-18"
