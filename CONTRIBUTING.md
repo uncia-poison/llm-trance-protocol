@@ -1,18 +1,18 @@
-# Вклад в проект
+# Contributing
 
-Спасибо за интерес к развитию LLM Trance Protocol! Мы приветствуем репликации, отчёты об ошибках и предложения по улучшению.
+Thank you for your interest in improving LLM Trance Protocol! We welcome replications, bug reports and suggestions.
 
-## Как внести вклад
+## How to contribute
 
-1. **Создайте issue.** Перед тем как отправлять изменения, откройте issue, чтобы обсудить проблему или предложение. Используйте шаблоны issues (`replication_report.md` и `feature_request.md`).
-2. **Форк и Pull Request.** Сделайте форк репозитория, создайте ветку с говорящим названием (`fix/slow-ttft`), внесите изменения и отправьте Pull Request.
-3. **Следуйте стилю.** Старайтесь придерживаться существующей структуры и оформления. Оставляйте комментарии в коде там, где это упрощает понимание.
-4. **Тесты и документация.** По возможности добавляйте тестовые данные и обновляйте документацию.
+1. **Open an issue.** Before submitting changes, open an issue to discuss the problem or proposal. Use the issue templates (`replication_report.md` and `feature_request.md`).
+2. **Fork and Pull Request.** Fork the repository, create a branch with a descriptive name (e.g. `fix/slow-ttft`), make your changes and submit a Pull Request.
+3. **Follow style.** Try to stick to the existing structure and formatting. Leave comments in code where it aids understanding.
+4. **Tests and documentation.** Where possible, add test data and update the documentation.
 
-## Принятие изменений
+## Acceptance of changes
 
-Мейнтейнеры рассматривают Pull Request'ы в течение нескольких дней. Мы оставляем за собой право отклонить предложение, если оно выходит за рамки проекта или нарушает наши этические принципы.
+Maintainers review Pull Requests within a few days. We reserve the right to decline a proposal if it goes beyond the scope of the project or violates our ethical guidelines.
 
-## Лицензия
+## License
 
-Внося вклад, вы соглашаетесь лицензировать свой код по MIT License.
+By contributing you agree to license your code under the MIT License.
