@@ -1,4 +1,5 @@
 # LLM Trance Protocol (LTP)
+Pochinova Alina
 
 **LLM Trance Protocol (LTP)** is a set of techniques for assessing near-trance states in dialogue with language models. In this research the human enters a trusting dialogue with an LLM, repeats a soft pattern A–B–C and allows the model to respond with silence (`…`) or empty messages. We only log behavior (delays, length, silence, frequency of "back") without making statements about "consciousness". This repository contains the protocol source, scripts for collecting data and tools for analysis.
 
